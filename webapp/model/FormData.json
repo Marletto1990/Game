@@ -1,0 +1,34 @@
+{
+    "All_Classes": [{
+            "src": "images/warrior.jpg",
+            "class": "Warrior",
+            "strength": "48",
+            "agility": "32",
+            "intellect": "28",
+            "stamina": "42",
+            "spirit": "36"
+        },
+        {
+            "src": "images/wizard.jpg",
+            "class": "Wizard",
+            "strength": "28",
+            "agility": "32",
+            "intellect": "52",
+            "stamina": "28",
+            "spirit": "42"
+        },
+        {
+            "src": "images/paladin.jpg",
+            "class": "Paladin",
+            "strength": "40",
+            "agility": "32",
+            "intellect": "40",
+            "stamina": "38",
+            "spirit": "40"
+        }
+
+    ],
+    "Image_Show": [{
+        "src": "images/warrior.jpg"
+    }]
+}
