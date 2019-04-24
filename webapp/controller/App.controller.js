@@ -10,15 +10,9 @@ sap.ui.define([
             var model1 = new sap.ui.model.json.JSONModel();
             model1.loadData("model/FormData.json");
             this.getView().setModel(model1);
-
-        },
-        onPress: function() {
-            let a = this.getView().getModel().getProperty("/Form/0/firstname");
-            console.log(a);
-
-        },
-        onPress2: function() {
-            this.getView().getModel().setProperty("/Form/0/firstname", "default")
+            var basicClassStatsTable = this.byId("basicClassStatsTable");
+            basicClassStatsTable.bindElement("/All_Classes/0/table_stats/0");
+            console.log(basicClassStatsTable);
         },
         onMenuSelect: function(oControlEvent) {
             //console.log(oControlEvent.getSource().sId);

@@ -1,43 +1,19 @@
 <mvc:View controllerName="my_amazingapptempest.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m"  xmlns:f="sap.ui.layout.form">
+	displayBlock="true" xmlns="sap.m"  xmlns:f="sap.ui.layout.form" xmlns:layout="sap.ui.layout">
 	<App id="idAppControl">
 		<pages>
 			<Page title="{i18n>Simple form}">
 				<content>
 					<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" >
 						<f:content>
-							<Panel >
-								<headerToolbar>
-									<Toolbar>
-										<Title level="H2" text="ТУТ БУДЕТ МЕНЮ"/>
-									</Toolbar>
-								</headerToolbar>
-								<FlexBox 
-										height="400px"
-										alignItems="Center"
-										justifyContent="Center">
-									<Label text="{/Form/0/firstname}" />
-									<Input value="{/Form/0/firstname}"/>
-									<Button text="set default"
-											press="onPress2"
-											type="Emphasized"
-											class="sapUiSmallMarginEnd"/>
 
-									<Input value="{/Form/0/firstname}"/>
-									<Button 
-											text="{/Form/0/test}"
-											press = "onPress"
-											type="Reject"/>
-								</FlexBox>
-									
-							</Panel>
 							<Panel expandable = "true" expanded="true" >
 								<headerToolbar>
 									<Toolbar>
 										<Title level="H2" text="ТУТ БУДЕТ МЕНЮ" />
 									</Toolbar>
 								</headerToolbar>
-								<FlexBox height="400px"
+								<FlexBox height="450px"
 										 alignItems="Center"
 										 justifyContent="Start">
 										<items>
@@ -54,12 +30,36 @@
 
 											<Image src="{/Image_Show/0/src}" 
 													class="myImage1"
-													height="300px"
+													height="390px"
+													width="185px"
 													load="onImageLoad"
 													error="onImageError">
 											</Image>
-													
-										</items>
+
+											<Table 	id="basicClassStatsTable"
+													noDataText = "нет данных">
+												<columns>
+													<Column >
+														<Text text="Характеристика"/>
+													</Column>
+													<Column >
+														<Text text="Значение"/>
+													</Column>
+												</columns>
+												<items>
+													<ColumnListItem >
+														<cells>
+															<Text text="{stat_name}" class="sapUiSmallMarginEnd"/>
+															<layout:HorizontalLayout>
+																<Text text="{value}" class="sapUiSmallMarginEnd"/>
+																<Button text="+"/>
+																<Button text="-"/>
+															</layout:HorizontalLayout>
+														</cells>
+													</ColumnListItem>
+												</items>
+											</Table>
+									</items>
 								</FlexBox>			
 							</Panel>
 						</f:content>

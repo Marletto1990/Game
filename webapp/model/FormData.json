@@ -2,29 +2,77 @@
     "All_Classes": [{
             "src": "images/warrior.jpg",
             "class": "Warrior",
-            "strength": "48",
-            "agility": "32",
-            "intellect": "28",
-            "stamina": "42",
-            "spirit": "36"
+            "table_stats": [{
+                    "stat_name": "strength",
+                    "value": "42"
+                },
+                {
+                    "stat_name": "agility",
+                    "value": "32"
+                },
+                {
+                    "stat_name": "intellect",
+                    "value": "28"
+                },
+                {
+                    "stat_name": "stamina",
+                    "value": "42"
+                },
+                {
+                    "stat_name": "spirit",
+                    "value": "36"
+                }
+            ]
         },
         {
             "src": "images/wizard.jpg",
             "class": "Wizard",
-            "strength": "28",
-            "agility": "32",
-            "intellect": "52",
-            "stamina": "28",
-            "spirit": "42"
+            "table_stats": [{
+                    "stat_name": "strength",
+                    "value": "28"
+                },
+                {
+                    "stat_name": "agility",
+                    "value": "28"
+                },
+                {
+                    "stat_name": "intellect",
+                    "value": "45"
+                },
+                {
+                    "stat_name": "stamina",
+                    "value": "33"
+                },
+                {
+                    "stat_name": "spirit",
+                    "value": "42"
+                }
+            ]
         },
         {
             "src": "images/paladin.jpg",
             "class": "Paladin",
-            "strength": "40",
-            "agility": "32",
-            "intellect": "40",
-            "stamina": "38",
-            "spirit": "40"
+            "table_stats": [{
+                    "stat_name": "strength",
+                    "value": "38"
+                },
+                {
+                    "stat_name": "agility",
+                    "value": "32"
+                },
+                {
+                    "stat_name": "intellect",
+                    "value": "36"
+                },
+                {
+                    "stat_name": "stamina",
+                    "value": "38"
+                },
+                {
+                    "stat_name": "spirit",
+                    "value": "40"
+                }
+            ]
         }
 
     ],
