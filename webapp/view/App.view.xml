@@ -37,7 +37,8 @@
 											</Image>
 
 											<Table 	id="basicClassStatsTable"
-													noDataText = "нет данных">
+													noDataText = "нет данных"
+													items="{table_stats}">
 												<columns>
 													<Column >
 														<Text text="Характеристика"/>
@@ -45,16 +46,22 @@
 													<Column >
 														<Text text="Значение"/>
 													</Column>
+													<Column>
+														<Text text="Оставшиеся очки для распределения:  {/Basic_Bonus_Points/0/points}"/>
+													</Column>
 												</columns>
 												<items>
 													<ColumnListItem >
 														<cells>
 															<Text text="{stat_name}" class="sapUiSmallMarginEnd"/>
 															<layout:HorizontalLayout>
-																<Text text="{value}" class="sapUiSmallMarginEnd"/>
-																<Button text="+"/>
-																<Button text="-"/>
+																<Text text="{current_value}" class="sapUiSmallMarginEnd"/>
+																<Button text="+"
+																		press="startStatBonusButtonPlus"/>
+																<Button text="-"
+																		press="startStatBonusButtonMinus"/>
 															</layout:HorizontalLayout>
+															<Text text="{start_stat_bonus}"/>
 														</cells>
 													</ColumnListItem>
 												</items>
@@ -62,6 +69,7 @@
 									</items>
 								</FlexBox>			
 							</Panel>
+
 						</f:content>
 					</f:SimpleForm>
 				</content>
