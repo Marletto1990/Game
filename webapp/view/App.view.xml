@@ -28,22 +28,22 @@
 
 											</RadioButtonGroup>
 
-											<Image src="{/Image_Show/0/src}" 
+											<Image  src="{/Image_Show/0/src}" 
 													class="myImage1"
-													height="390px"
-													width="185px"
+													height="350px"
+													width="200px"
 													load="onImageLoad"
 													error="onImageError">
 											</Image>
 
-											<Table 	id="basicClassStatsTable"
+											<Table  id="basicClassStatsTable"
 													noDataText = "нет данных"
 													items="{table_stats}">
 												<columns>
-													<Column >
+													<Column>
 														<Text text="Характеристика"/>
 													</Column>
-													<Column >
+													<Column>
 														<Text text="Значение"/>
 													</Column>
 													<Column>

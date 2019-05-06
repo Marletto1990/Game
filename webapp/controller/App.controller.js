@@ -13,11 +13,10 @@ sap.ui.define([
             var basicClassStatsTable = this.byId("basicClassStatsTable");
             basicClassStatsTable.bindElement("/All_Classes/0");
             console.log(basicClassStatsTable);
+
         },
         onMenuSelect: function(oControlEvent) {
-            //console.log(oControlEvent.getSource().sId);
             if (oControlEvent.mParameters.selected === true) {
-                //MessageToast.show(oControlEvent.getSource().getBindingContext().getProperty('src') + ".jpg");
                 var sSelectedSrc = oControlEvent.getSource().getBindingContext().getProperty('src');
 
                 this.getView().getModel().setProperty('/Image_Show/0/src', sSelectedSrc);
@@ -30,10 +29,10 @@ sap.ui.define([
                     case 'Warrior':
                         checker = 0;
                         break;
-                    case 'Wizard':
+                    case 'Mage':
                         checker = 1;
                         break;
-                    case 'Paladin':
+                    case 'Priest':
                         checker = 2;
                         break;
                 };
